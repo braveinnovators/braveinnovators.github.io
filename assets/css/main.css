@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #f4f4f4;
+  background-color: #161616;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100%;
+}
+
+main div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo::after {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/logo.png);
+  content: '';
+}
+
+.social-icon {
+  display: flex;
+  margin: 0 10px;
+}
+
+.social-icon::after {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  background-color: #f4f4f4;
+  content: '';
+}
+
+.social-icon:hover::after {
+  background-color: #0f62fe;
+}
+
+.social-icon:active::after {
+  background-color: #a8a8a8;
+}
+
+.social-icon.mastodon::after {
+  -webkit-mask-image: url(../svg/mastodon.svg);
+  mask-image: url(../svg/mastodon.svg);
+}
+
+.social-icon.twitter::after {
+  -webkit-mask-image: url(../svg/twitter.svg);
+  mask-image: url(../svg/twitter.svg);
+}
+
+.social-icon.facebook::after {
+  -webkit-mask-image: url(../svg/facebook.svg);
+  mask-image: url(../svg/facebook.svg);
+}
+
+.social-icon.github::after {
+  -webkit-mask-image: url(../svg/github.svg);
+  mask-image: url(../svg/github.svg);
+}
