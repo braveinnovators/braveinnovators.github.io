@@ -46,7 +46,7 @@ main div {
   display: flex;
   width: 100px;
   height: 100px;
-  background-image: url(../img/logo.png);
+  background-image: url(https://www.awwwwesome.org/assets/img/logo.png);
   content: '';
 }
 
@@ -78,21 +78,21 @@ main div {
 }
 
 .social-icon.mastodon::after {
-  -webkit-mask-image: url(../svg/mastodon.svg);
-  mask-image: url(../svg/mastodon.svg);
+  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/mastodon.svg);
+  mask-image: url(https://www.awwwwesome.org/assets/svg/mastodon.svg);
 }
 
 .social-icon.twitter::after {
-  -webkit-mask-image: url(../svg/twitter.svg);
-  mask-image: url(../svg/twitter.svg);
+  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/twitter.svg);
+  mask-image: url(https://www.awwwwesome.org/assets/svg/twitter.svg);
 }
 
 .social-icon.facebook::after {
-  -webkit-mask-image: url(../svg/facebook.svg);
-  mask-image: url(../svg/facebook.svg);
+  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
+  mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
 }
 
 .social-icon.github::after {
-  -webkit-mask-image: url(../svg/github.svg);
-  mask-image: url(../svg/github.svg);
+  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/github.svg);
+  mask-image: url(https://www.awwwwesome.org/assets/svg/github.svg);
 }
