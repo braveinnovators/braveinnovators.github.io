@@ -1,0 +1,8 @@
+# robots.txt: We Are Machines, Not People.
+
+User-agent: *
+Disallow: /*.txt$
+Disallow: /*.csv$
+Disallow: /*.json$
+
+Crawl-delay: 2
