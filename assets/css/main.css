@@ -82,11 +82,6 @@ main div {
   mask-image: url(https://www.awwwwesome.org/assets/svg/mastodon.svg);
 }
 
-.social-icon.twitter::after {
-  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/twitter.svg);
-  mask-image: url(https://www.awwwwesome.org/assets/svg/twitter.svg);
-}
-
 .social-icon.facebook::after {
   -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
   mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
