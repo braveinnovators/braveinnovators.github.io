@@ -1,13 +1,18 @@
 ! [Adblock Plus 3.2]
-! Title: Ukrainian Malicious URL Blocklist (Adblock filter syntax)
-! Description: Blocklist of phishing web resources that are targeted at citizens of Ukraine
-! Version: 20240123.01
-! Last modified: Tue, 23 January 2024 18:12 EET
+! Redirect: https://www.awwwwesome.org/ukrainian-security-filter.txt
+! Title: Ukrainian Security Filter (Adblock-style syntax)
+! Description: Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens
+! Version: 20240124.01
+! Last modified: Wed, 24 January 2024 15:42 EET
 ! Expires: 1 day
 ! Licence: https://github.com/braveinnovators/url-blocklist/blob/main/LICENSE
 !
 ! Homepage: https://github.com/braveinnovators/url-blocklist
 ! Issues: https://github.com/braveinnovators/url-blocklist/issues
+!
+! !!!!!!!!!!!!!!!
+! DOMAIN-BASED BLOCKLIST
+! !!!!!!!!!!!!!!!
 !
 ||0ukr.net^
 ||1webs.top^
@@ -1420,6 +1425,37 @@
 ||zoloto-loto.net^
 !
 ! !!!!!!!!!!!!!!!
+! PAGE-SPECIFIC FILTERING RULES
+! !!!!!!!!!!!!!!!
+!
+||*diya_official^$document,domain=t.me|telegram.me
+||*egroshi_ua^$document,domain=t.me|telegram.me
+||*grosgovadopomoga^$document,domain=t.me|telegram.me
+||*pravovadopomoga24^$document,domain=t.me|telegram.me
+||*ukrua2023^$document,domain=t.me|telegram.me
+||*zayavka_ua_bot^$document,domain=t.me|telegram.me
+||cash.app/$urkraineaid^$document
+||donorbox.org/urkraine-aid^$document
+||facebook.com/uappl.org^$document
+||invite.viber.com/?g2=AQAqETadeQe6%2FFHerHWKG3aYbNdWpQYR6VnHA0Qlo6pvtX0uWS74HrSJxWdK9WAV^$document
+||invite.viber.com/?g2=AQAYbL6PIqqzQ1HO81URILdQUW6BLiftGFk%2B9SK%2BoUew7j5NzbIaS0nRsSeCXqv%2B^$document
+||invite.viber.com/?g2=AQBekGE6cjQUwFG69yVG2yKpwYEBSCTDXIzjlxGIRMFUvKZx8bcL4AECa75ZlDNn^$document
+||invite.viber.com/?g2=AQBGh39kgyim3lIU%2FlDpPS2ZK0A5mXqml6xvcXjPwc4rToGm9Ly4e6LdoouQtdnn^$document
+||invite.viber.com/?g2=AQBgP%2BauuhWt0FIWku5tuXN2S2mhNFxAJ1eKZjfh%2BEKJES02tkQo0eRsm9bMzWDj^$document
+||t.me/+bye4lJIqbQwzOWI1^$document
+||t.me/+dnln2AfIoPYzMDRi^$document
+||t.me/+G7FPG_hofQJjZjli^$document
+||t.me/+gvj4twyHg8BkMDc6^$document
+||t.me/+H_ihqCQLUdQ1MDJk^$document
+||t.me/+hD2lJDyLPJs4OTY0^$document
+||t.me/+ilAa8TtLqz42NjBi^$document
+||t.me/+IsZIeWR33uA1NTRl^$document
+||t.me/+QJ6ha3cNr61kNTk6^$document
+||t.me/+xp5hvriUlW01ZGYy^$document
+||t.me/+Vazo7VA93EwyMGUy^$document
+||t.me/+c_SeqIDrI5A2OWQ0^$document
+!
+! !!!!!!!!!!!!!!!
 ! PATTERN-BASED FILTERING RULES
 ! !!!!!!!!!!!!!!!
 !
@@ -1544,7 +1580,7 @@
 ://*.*/user.php?mod=do&act=login$document,xmlhttprequest
 ://*.*/user.php?mod=do&act=register$document,xmlhttprequest
 ://*.*/mod/project/534154/lead/send/$document,xmlhttprequest
-##html[lang*="ru-RU"] > body > div.main_wrapper > [class*="_section"]
+##html[lang*="ru"] > body > div.main_wrapper > [class*="_section"]
 ##a[class*="button"][href*="#order_form"]
 ##a[class*="button"][href*="#order"]
 ##a[class*="button"][href*="#cat"]
@@ -1660,35 +1696,3 @@
 ://*.*/bi/*1704*$document
 ##div.layout-item > div.layout-item__body > a[href*="banks.php"]
 ##div.main_table > div.content_section > div.content > div#comBankPager_2.pager.com_bank.com_blog.list
-!
-! !!!!!!!!!!!!!!!
-! PAGE-SPECIFIC FILTERING RULES
-! !!!!!!!!!!!!!!!
-!
-||*dia_dopom*$document,domain=t.me|telegram.me
-||*diya_official^$document,domain=t.me|telegram.me
-||*egroshi_ua^$document,domain=t.me|telegram.me
-||*grosgovadopomoga^$document,domain=t.me|telegram.me
-||*pravovadopomoga24^$document,domain=t.me|telegram.me
-||*ukrua2023^$document,domain=t.me|telegram.me
-||*zayavka_ua_bot^$document,domain=t.me|telegram.me
-||cash.app/$urkraineaid^$document
-||donorbox.org/urkraine-aid^$document
-||facebook.com/uappl.org^$document
-||invite.viber.com/?g2=AQAqETadeQe6%2FFHerHWKG3aYbNdWpQYR6VnHA0Qlo6pvtX0uWS74HrSJxWdK9WAV^$document
-||invite.viber.com/?g2=AQAYbL6PIqqzQ1HO81URILdQUW6BLiftGFk%2B9SK%2BoUew7j5NzbIaS0nRsSeCXqv%2B^$document
-||invite.viber.com/?g2=AQBekGE6cjQUwFG69yVG2yKpwYEBSCTDXIzjlxGIRMFUvKZx8bcL4AECa75ZlDNn^$document
-||invite.viber.com/?g2=AQBGh39kgyim3lIU%2FlDpPS2ZK0A5mXqml6xvcXjPwc4rToGm9Ly4e6LdoouQtdnn^$document
-||invite.viber.com/?g2=AQBgP%2BauuhWt0FIWku5tuXN2S2mhNFxAJ1eKZjfh%2BEKJES02tkQo0eRsm9bMzWDj^$document
-||t.me/+bye4lJIqbQwzOWI1^$document
-||t.me/+dnln2AfIoPYzMDRi^$document
-||t.me/+G7FPG_hofQJjZjli^$document
-||t.me/+gvj4twyHg8BkMDc6^$document
-||t.me/+H_ihqCQLUdQ1MDJk^$document
-||t.me/+hD2lJDyLPJs4OTY0^$document
-||t.me/+ilAa8TtLqz42NjBi^$document
-||t.me/+IsZIeWR33uA1NTRl^$document
-||t.me/+QJ6ha3cNr61kNTk6^$document
-||t.me/+xp5hvriUlW01ZGYy^$document
-||t.me/+Vazo7VA93EwyMGUy^$document
-||t.me/+c_SeqIDrI5A2OWQ0^$document
