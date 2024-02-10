@@ -1,4 +1,5 @@
 ! [Adblock Plus 3.2]
+! Redirect: https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/adblock/ukrainian-security-filter.txt
 ! Title: Ukrainian Security Filter (Adblock-style syntax)
 ! Description: Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens
 ! Version: 20240211.01
