@@ -1,1 +1,1 @@
-data/filters/*.txt linguist-language=adblock linguist-detectable
+data/filters/*/*.txt linguist-language=adblock linguist-detectable
