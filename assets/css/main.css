@@ -20,7 +20,7 @@ html {
 
 body {
   color: #f4f4f4;
-  background-color: #00070f;
+  background-color: #000000;
 }
 
 main {
@@ -80,11 +80,6 @@ main div {
 .social-icon.mastodon::after {
   -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/mastodon.svg);
   mask-image: url(https://www.awwwwesome.org/assets/svg/mastodon.svg);
-}
-
-.social-icon.facebook::after {
-  -webkit-mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
-  mask-image: url(https://www.awwwwesome.org/assets/svg/facebook.svg);
 }
 
 .social-icon.github::after {
