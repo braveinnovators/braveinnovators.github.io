@@ -44,8 +44,8 @@ main div {
 
 .logo::after {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 117px;
+  height: 120px;
   background-image: url(https://www.awwwwesome.org/assets/img/logo.png);
   content: '';
 }
